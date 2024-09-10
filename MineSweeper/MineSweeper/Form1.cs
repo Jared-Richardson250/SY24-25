@@ -39,6 +39,10 @@ namespace MineSweeper
             {
                 
             }
+            int Time = 0;
+            timer1 = new Timer();
+            timer1.Interval = Time++;
+            label4.Text = Time.ToString();
         }
     }
 }
