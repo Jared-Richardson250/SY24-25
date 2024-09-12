@@ -23,10 +23,6 @@ namespace GameOfChance
             int num = random.Next(1, 35);
             textBox1.Text = num.ToString();
             button1.Enabled = false;
-            if (textBox2.Text = "2")
-            {
-                textBox1.ForeColor = Color.Red;
-            }
         }
 
         private void button2_Click(object sender, EventArgs e)
