@@ -12,6 +12,8 @@ namespace GameOfChance
 {
     public partial class Form1 : Form
     {
+                int payout = 0;
+                int answer = 0;
         public Form1()
         {
             InitializeComponent();
@@ -19,30 +21,19 @@ namespace GameOfChance
 
         private TextBox GetTextBox2()
         {
-            return textBox2;
-        }
-
-        private void button1_Click(object sender, EventArgs e, TextBox textBox2, int Payout, string answer)
-        {
-            int Answer;
-            Random random = new Random();
-            int num = random.Next(1, 35);
-            textBox1.Text = num.ToString();
-            button1.Enabled = false;
-            if (textBox1.Text = answer)
-            {
-                Payout *= 2;
-            }
+            return NumberTB;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
             button1.Enabled = true;
-            textBox2.Enabled = true;
-            textBox3.Enabled = true;
+            NumberTB.Enabled = true;
+            BetTB.Enabled = true;
+            button1.Enabled = false;
             textBox1.Text = "";
-            textBox2.Text = "";
-            textBox3.Text = "";
+            NumberTB.Text = "";
+            BetTB.Text = "";
+            PayoutTB.Text = "";
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -52,12 +43,32 @@ namespace GameOfChance
 
         private void button3_Click(object sender, EventArgs e)
         {
-            textBox2.Enabled = false;
+            NumberTB.Enabled = false;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            textBox3.Enabled = false;
+            BetTB.Enabled = false;
+                if (NumberTB.Enabled == false && BetTB.Enabled == false)
+                {
+                    button1.Enabled = true;
+                }
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            {
+                Random random = new Random();
+                int num = random.Next(1, 2);
+                textBox1.Text = num.ToString();
+                button1.Enabled = false;
+                PayoutTB.Text = payout.ToString();
+                NumberTB.Text = answer.ToString();
+                if (textBox1.Text == answer.ToString())
+                {
+                    payout *= payout * 2;
+                }
+            }
         }
     }
 }
