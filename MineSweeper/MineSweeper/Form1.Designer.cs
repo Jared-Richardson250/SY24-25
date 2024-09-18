@@ -1,4 +1,4 @@
-﻿namespace MineSweeper
+﻿namespace MindSweeper
 {
     partial class Form1
     {
@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
@@ -133,7 +132,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.ResetB = new System.Windows.Forms.Button();
+            this.button102 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -143,6 +143,7 @@
             this.button1.Size = new System.Drawing.Size(50, 50);
             this.button1.TabIndex = 0;
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button2
             // 
@@ -151,6 +152,7 @@
             this.button2.Size = new System.Drawing.Size(50, 50);
             this.button2.TabIndex = 1;
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button3
             // 
@@ -159,6 +161,7 @@
             this.button3.Size = new System.Drawing.Size(50, 50);
             this.button3.TabIndex = 2;
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button4
             // 
@@ -167,6 +170,7 @@
             this.button4.Size = new System.Drawing.Size(50, 50);
             this.button4.TabIndex = 3;
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button5
             // 
@@ -175,6 +179,7 @@
             this.button5.Size = new System.Drawing.Size(50, 50);
             this.button5.TabIndex = 4;
             this.button5.UseVisualStyleBackColor = true;
+            this.button5.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button6
             // 
@@ -183,6 +188,7 @@
             this.button6.Size = new System.Drawing.Size(50, 50);
             this.button6.TabIndex = 9;
             this.button6.UseVisualStyleBackColor = true;
+            this.button6.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button7
             // 
@@ -191,6 +197,7 @@
             this.button7.Size = new System.Drawing.Size(50, 50);
             this.button7.TabIndex = 8;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button8
             // 
@@ -199,6 +206,7 @@
             this.button8.Size = new System.Drawing.Size(50, 50);
             this.button8.TabIndex = 7;
             this.button8.UseVisualStyleBackColor = true;
+            this.button8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button9
             // 
@@ -207,6 +215,7 @@
             this.button9.Size = new System.Drawing.Size(50, 50);
             this.button9.TabIndex = 6;
             this.button9.UseVisualStyleBackColor = true;
+            this.button9.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button10
             // 
@@ -215,6 +224,7 @@
             this.button10.Size = new System.Drawing.Size(50, 50);
             this.button10.TabIndex = 5;
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button11
             // 
@@ -223,6 +233,7 @@
             this.button11.Size = new System.Drawing.Size(50, 50);
             this.button11.TabIndex = 14;
             this.button11.UseVisualStyleBackColor = true;
+            this.button11.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button12
             // 
@@ -231,6 +242,7 @@
             this.button12.Size = new System.Drawing.Size(50, 50);
             this.button12.TabIndex = 13;
             this.button12.UseVisualStyleBackColor = true;
+            this.button12.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button13
             // 
@@ -239,6 +251,7 @@
             this.button13.Size = new System.Drawing.Size(50, 50);
             this.button13.TabIndex = 12;
             this.button13.UseVisualStyleBackColor = true;
+            this.button13.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button14
             // 
@@ -247,6 +260,7 @@
             this.button14.Size = new System.Drawing.Size(50, 50);
             this.button14.TabIndex = 11;
             this.button14.UseVisualStyleBackColor = true;
+            this.button14.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button15
             // 
@@ -255,6 +269,7 @@
             this.button15.Size = new System.Drawing.Size(50, 50);
             this.button15.TabIndex = 10;
             this.button15.UseVisualStyleBackColor = true;
+            this.button15.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button16
             // 
@@ -263,6 +278,7 @@
             this.button16.Size = new System.Drawing.Size(50, 50);
             this.button16.TabIndex = 19;
             this.button16.UseVisualStyleBackColor = true;
+            this.button16.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button17
             // 
@@ -271,6 +287,7 @@
             this.button17.Size = new System.Drawing.Size(50, 50);
             this.button17.TabIndex = 18;
             this.button17.UseVisualStyleBackColor = true;
+            this.button17.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button18
             // 
@@ -279,6 +296,7 @@
             this.button18.Size = new System.Drawing.Size(50, 50);
             this.button18.TabIndex = 17;
             this.button18.UseVisualStyleBackColor = true;
+            this.button18.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button19
             // 
@@ -287,6 +305,7 @@
             this.button19.Size = new System.Drawing.Size(50, 50);
             this.button19.TabIndex = 16;
             this.button19.UseVisualStyleBackColor = true;
+            this.button19.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button20
             // 
@@ -295,6 +314,7 @@
             this.button20.Size = new System.Drawing.Size(50, 50);
             this.button20.TabIndex = 15;
             this.button20.UseVisualStyleBackColor = true;
+            this.button20.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button21
             // 
@@ -303,6 +323,7 @@
             this.button21.Size = new System.Drawing.Size(50, 50);
             this.button21.TabIndex = 24;
             this.button21.UseVisualStyleBackColor = true;
+            this.button21.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button22
             // 
@@ -311,6 +332,7 @@
             this.button22.Size = new System.Drawing.Size(50, 50);
             this.button22.TabIndex = 23;
             this.button22.UseVisualStyleBackColor = true;
+            this.button22.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button23
             // 
@@ -319,6 +341,7 @@
             this.button23.Size = new System.Drawing.Size(50, 50);
             this.button23.TabIndex = 22;
             this.button23.UseVisualStyleBackColor = true;
+            this.button23.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button24
             // 
@@ -327,6 +350,7 @@
             this.button24.Size = new System.Drawing.Size(50, 50);
             this.button24.TabIndex = 21;
             this.button24.UseVisualStyleBackColor = true;
+            this.button24.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button25
             // 
@@ -335,6 +359,7 @@
             this.button25.Size = new System.Drawing.Size(50, 50);
             this.button25.TabIndex = 20;
             this.button25.UseVisualStyleBackColor = true;
+            this.button25.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button26
             // 
@@ -343,6 +368,7 @@
             this.button26.Size = new System.Drawing.Size(50, 50);
             this.button26.TabIndex = 29;
             this.button26.UseVisualStyleBackColor = true;
+            this.button26.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button27
             // 
@@ -351,6 +377,7 @@
             this.button27.Size = new System.Drawing.Size(50, 50);
             this.button27.TabIndex = 28;
             this.button27.UseVisualStyleBackColor = true;
+            this.button27.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button28
             // 
@@ -359,6 +386,7 @@
             this.button28.Size = new System.Drawing.Size(50, 50);
             this.button28.TabIndex = 27;
             this.button28.UseVisualStyleBackColor = true;
+            this.button28.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button29
             // 
@@ -367,6 +395,7 @@
             this.button29.Size = new System.Drawing.Size(50, 50);
             this.button29.TabIndex = 26;
             this.button29.UseVisualStyleBackColor = true;
+            this.button29.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button30
             // 
@@ -375,6 +404,7 @@
             this.button30.Size = new System.Drawing.Size(50, 50);
             this.button30.TabIndex = 25;
             this.button30.UseVisualStyleBackColor = true;
+            this.button30.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button31
             // 
@@ -383,6 +413,7 @@
             this.button31.Size = new System.Drawing.Size(50, 50);
             this.button31.TabIndex = 34;
             this.button31.UseVisualStyleBackColor = true;
+            this.button31.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button32
             // 
@@ -391,6 +422,7 @@
             this.button32.Size = new System.Drawing.Size(50, 50);
             this.button32.TabIndex = 33;
             this.button32.UseVisualStyleBackColor = true;
+            this.button32.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button33
             // 
@@ -399,6 +431,7 @@
             this.button33.Size = new System.Drawing.Size(50, 50);
             this.button33.TabIndex = 32;
             this.button33.UseVisualStyleBackColor = true;
+            this.button33.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button34
             // 
@@ -407,6 +440,7 @@
             this.button34.Size = new System.Drawing.Size(50, 50);
             this.button34.TabIndex = 31;
             this.button34.UseVisualStyleBackColor = true;
+            this.button34.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button35
             // 
@@ -415,6 +449,7 @@
             this.button35.Size = new System.Drawing.Size(50, 50);
             this.button35.TabIndex = 30;
             this.button35.UseVisualStyleBackColor = true;
+            this.button35.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button36
             // 
@@ -423,6 +458,7 @@
             this.button36.Size = new System.Drawing.Size(50, 50);
             this.button36.TabIndex = 39;
             this.button36.UseVisualStyleBackColor = true;
+            this.button36.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button37
             // 
@@ -431,6 +467,7 @@
             this.button37.Size = new System.Drawing.Size(50, 50);
             this.button37.TabIndex = 38;
             this.button37.UseVisualStyleBackColor = true;
+            this.button37.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button38
             // 
@@ -439,6 +476,7 @@
             this.button38.Size = new System.Drawing.Size(50, 50);
             this.button38.TabIndex = 37;
             this.button38.UseVisualStyleBackColor = true;
+            this.button38.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button39
             // 
@@ -447,6 +485,7 @@
             this.button39.Size = new System.Drawing.Size(50, 50);
             this.button39.TabIndex = 36;
             this.button39.UseVisualStyleBackColor = true;
+            this.button39.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button40
             // 
@@ -455,6 +494,7 @@
             this.button40.Size = new System.Drawing.Size(50, 50);
             this.button40.TabIndex = 35;
             this.button40.UseVisualStyleBackColor = true;
+            this.button40.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button41
             // 
@@ -463,6 +503,7 @@
             this.button41.Size = new System.Drawing.Size(50, 50);
             this.button41.TabIndex = 44;
             this.button41.UseVisualStyleBackColor = true;
+            this.button41.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button42
             // 
@@ -471,6 +512,7 @@
             this.button42.Size = new System.Drawing.Size(50, 50);
             this.button42.TabIndex = 43;
             this.button42.UseVisualStyleBackColor = true;
+            this.button42.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button43
             // 
@@ -479,6 +521,7 @@
             this.button43.Size = new System.Drawing.Size(50, 50);
             this.button43.TabIndex = 42;
             this.button43.UseVisualStyleBackColor = true;
+            this.button43.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button44
             // 
@@ -487,6 +530,7 @@
             this.button44.Size = new System.Drawing.Size(50, 50);
             this.button44.TabIndex = 41;
             this.button44.UseVisualStyleBackColor = true;
+            this.button44.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button45
             // 
@@ -495,6 +539,7 @@
             this.button45.Size = new System.Drawing.Size(50, 50);
             this.button45.TabIndex = 40;
             this.button45.UseVisualStyleBackColor = true;
+            this.button45.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button46
             // 
@@ -503,6 +548,7 @@
             this.button46.Size = new System.Drawing.Size(50, 50);
             this.button46.TabIndex = 49;
             this.button46.UseVisualStyleBackColor = true;
+            this.button46.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button47
             // 
@@ -511,6 +557,7 @@
             this.button47.Size = new System.Drawing.Size(50, 50);
             this.button47.TabIndex = 48;
             this.button47.UseVisualStyleBackColor = true;
+            this.button47.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button48
             // 
@@ -519,6 +566,7 @@
             this.button48.Size = new System.Drawing.Size(50, 50);
             this.button48.TabIndex = 47;
             this.button48.UseVisualStyleBackColor = true;
+            this.button48.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button49
             // 
@@ -527,6 +575,7 @@
             this.button49.Size = new System.Drawing.Size(50, 50);
             this.button49.TabIndex = 46;
             this.button49.UseVisualStyleBackColor = true;
+            this.button49.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button50
             // 
@@ -535,6 +584,7 @@
             this.button50.Size = new System.Drawing.Size(50, 50);
             this.button50.TabIndex = 45;
             this.button50.UseVisualStyleBackColor = true;
+            this.button50.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button51
             // 
@@ -543,6 +593,7 @@
             this.button51.Size = new System.Drawing.Size(50, 50);
             this.button51.TabIndex = 54;
             this.button51.UseVisualStyleBackColor = true;
+            this.button51.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button52
             // 
@@ -551,6 +602,7 @@
             this.button52.Size = new System.Drawing.Size(50, 50);
             this.button52.TabIndex = 53;
             this.button52.UseVisualStyleBackColor = true;
+            this.button52.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button53
             // 
@@ -559,6 +611,7 @@
             this.button53.Size = new System.Drawing.Size(50, 50);
             this.button53.TabIndex = 52;
             this.button53.UseVisualStyleBackColor = true;
+            this.button53.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button54
             // 
@@ -567,6 +620,7 @@
             this.button54.Size = new System.Drawing.Size(50, 50);
             this.button54.TabIndex = 51;
             this.button54.UseVisualStyleBackColor = true;
+            this.button54.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button55
             // 
@@ -575,6 +629,7 @@
             this.button55.Size = new System.Drawing.Size(50, 50);
             this.button55.TabIndex = 50;
             this.button55.UseVisualStyleBackColor = true;
+            this.button55.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button56
             // 
@@ -583,6 +638,7 @@
             this.button56.Size = new System.Drawing.Size(50, 50);
             this.button56.TabIndex = 59;
             this.button56.UseVisualStyleBackColor = true;
+            this.button56.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button57
             // 
@@ -591,6 +647,7 @@
             this.button57.Size = new System.Drawing.Size(50, 50);
             this.button57.TabIndex = 58;
             this.button57.UseVisualStyleBackColor = true;
+            this.button57.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button58
             // 
@@ -599,6 +656,7 @@
             this.button58.Size = new System.Drawing.Size(50, 50);
             this.button58.TabIndex = 57;
             this.button58.UseVisualStyleBackColor = true;
+            this.button58.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button59
             // 
@@ -607,6 +665,7 @@
             this.button59.Size = new System.Drawing.Size(50, 50);
             this.button59.TabIndex = 56;
             this.button59.UseVisualStyleBackColor = true;
+            this.button59.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button60
             // 
@@ -615,6 +674,7 @@
             this.button60.Size = new System.Drawing.Size(50, 50);
             this.button60.TabIndex = 55;
             this.button60.UseVisualStyleBackColor = true;
+            this.button60.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button61
             // 
@@ -623,6 +683,7 @@
             this.button61.Size = new System.Drawing.Size(50, 50);
             this.button61.TabIndex = 64;
             this.button61.UseVisualStyleBackColor = true;
+            this.button61.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button62
             // 
@@ -631,6 +692,7 @@
             this.button62.Size = new System.Drawing.Size(50, 50);
             this.button62.TabIndex = 63;
             this.button62.UseVisualStyleBackColor = true;
+            this.button62.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button63
             // 
@@ -639,6 +701,7 @@
             this.button63.Size = new System.Drawing.Size(50, 50);
             this.button63.TabIndex = 62;
             this.button63.UseVisualStyleBackColor = true;
+            this.button63.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button64
             // 
@@ -647,6 +710,7 @@
             this.button64.Size = new System.Drawing.Size(50, 50);
             this.button64.TabIndex = 61;
             this.button64.UseVisualStyleBackColor = true;
+            this.button64.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button65
             // 
@@ -655,6 +719,7 @@
             this.button65.Size = new System.Drawing.Size(50, 50);
             this.button65.TabIndex = 60;
             this.button65.UseVisualStyleBackColor = true;
+            this.button65.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button66
             // 
@@ -663,6 +728,7 @@
             this.button66.Size = new System.Drawing.Size(50, 50);
             this.button66.TabIndex = 69;
             this.button66.UseVisualStyleBackColor = true;
+            this.button66.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button67
             // 
@@ -671,6 +737,7 @@
             this.button67.Size = new System.Drawing.Size(50, 50);
             this.button67.TabIndex = 68;
             this.button67.UseVisualStyleBackColor = true;
+            this.button67.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button68
             // 
@@ -679,6 +746,7 @@
             this.button68.Size = new System.Drawing.Size(50, 50);
             this.button68.TabIndex = 67;
             this.button68.UseVisualStyleBackColor = true;
+            this.button68.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button69
             // 
@@ -687,6 +755,7 @@
             this.button69.Size = new System.Drawing.Size(50, 50);
             this.button69.TabIndex = 66;
             this.button69.UseVisualStyleBackColor = true;
+            this.button69.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button70
             // 
@@ -695,6 +764,7 @@
             this.button70.Size = new System.Drawing.Size(50, 50);
             this.button70.TabIndex = 65;
             this.button70.UseVisualStyleBackColor = true;
+            this.button70.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button71
             // 
@@ -703,6 +773,7 @@
             this.button71.Size = new System.Drawing.Size(50, 50);
             this.button71.TabIndex = 74;
             this.button71.UseVisualStyleBackColor = true;
+            this.button71.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button72
             // 
@@ -711,6 +782,7 @@
             this.button72.Size = new System.Drawing.Size(50, 50);
             this.button72.TabIndex = 73;
             this.button72.UseVisualStyleBackColor = true;
+            this.button72.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button73
             // 
@@ -719,6 +791,7 @@
             this.button73.Size = new System.Drawing.Size(50, 50);
             this.button73.TabIndex = 72;
             this.button73.UseVisualStyleBackColor = true;
+            this.button73.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button74
             // 
@@ -727,6 +800,7 @@
             this.button74.Size = new System.Drawing.Size(50, 50);
             this.button74.TabIndex = 71;
             this.button74.UseVisualStyleBackColor = true;
+            this.button74.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button75
             // 
@@ -735,6 +809,7 @@
             this.button75.Size = new System.Drawing.Size(50, 50);
             this.button75.TabIndex = 70;
             this.button75.UseVisualStyleBackColor = true;
+            this.button75.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button76
             // 
@@ -743,6 +818,7 @@
             this.button76.Size = new System.Drawing.Size(50, 50);
             this.button76.TabIndex = 79;
             this.button76.UseVisualStyleBackColor = true;
+            this.button76.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button77
             // 
@@ -751,6 +827,7 @@
             this.button77.Size = new System.Drawing.Size(50, 50);
             this.button77.TabIndex = 78;
             this.button77.UseVisualStyleBackColor = true;
+            this.button77.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button78
             // 
@@ -759,6 +836,7 @@
             this.button78.Size = new System.Drawing.Size(50, 50);
             this.button78.TabIndex = 77;
             this.button78.UseVisualStyleBackColor = true;
+            this.button78.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button79
             // 
@@ -767,6 +845,7 @@
             this.button79.Size = new System.Drawing.Size(50, 50);
             this.button79.TabIndex = 76;
             this.button79.UseVisualStyleBackColor = true;
+            this.button79.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button80
             // 
@@ -775,6 +854,7 @@
             this.button80.Size = new System.Drawing.Size(50, 50);
             this.button80.TabIndex = 75;
             this.button80.UseVisualStyleBackColor = true;
+            this.button80.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button81
             // 
@@ -783,6 +863,7 @@
             this.button81.Size = new System.Drawing.Size(50, 50);
             this.button81.TabIndex = 84;
             this.button81.UseVisualStyleBackColor = true;
+            this.button81.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button82
             // 
@@ -791,6 +872,7 @@
             this.button82.Size = new System.Drawing.Size(50, 50);
             this.button82.TabIndex = 83;
             this.button82.UseVisualStyleBackColor = true;
+            this.button82.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button83
             // 
@@ -799,6 +881,7 @@
             this.button83.Size = new System.Drawing.Size(50, 50);
             this.button83.TabIndex = 82;
             this.button83.UseVisualStyleBackColor = true;
+            this.button83.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button84
             // 
@@ -807,6 +890,7 @@
             this.button84.Size = new System.Drawing.Size(50, 50);
             this.button84.TabIndex = 81;
             this.button84.UseVisualStyleBackColor = true;
+            this.button84.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button85
             // 
@@ -815,6 +899,7 @@
             this.button85.Size = new System.Drawing.Size(50, 50);
             this.button85.TabIndex = 80;
             this.button85.UseVisualStyleBackColor = true;
+            this.button85.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button86
             // 
@@ -823,6 +908,7 @@
             this.button86.Size = new System.Drawing.Size(50, 50);
             this.button86.TabIndex = 89;
             this.button86.UseVisualStyleBackColor = true;
+            this.button86.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button87
             // 
@@ -831,6 +917,7 @@
             this.button87.Size = new System.Drawing.Size(50, 50);
             this.button87.TabIndex = 88;
             this.button87.UseVisualStyleBackColor = true;
+            this.button87.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button88
             // 
@@ -839,6 +926,7 @@
             this.button88.Size = new System.Drawing.Size(50, 50);
             this.button88.TabIndex = 87;
             this.button88.UseVisualStyleBackColor = true;
+            this.button88.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button89
             // 
@@ -847,6 +935,7 @@
             this.button89.Size = new System.Drawing.Size(50, 50);
             this.button89.TabIndex = 86;
             this.button89.UseVisualStyleBackColor = true;
+            this.button89.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button90
             // 
@@ -855,6 +944,7 @@
             this.button90.Size = new System.Drawing.Size(50, 50);
             this.button90.TabIndex = 85;
             this.button90.UseVisualStyleBackColor = true;
+            this.button90.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button91
             // 
@@ -863,6 +953,7 @@
             this.button91.Size = new System.Drawing.Size(50, 50);
             this.button91.TabIndex = 94;
             this.button91.UseVisualStyleBackColor = true;
+            this.button91.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button92
             // 
@@ -871,6 +962,7 @@
             this.button92.Size = new System.Drawing.Size(50, 50);
             this.button92.TabIndex = 93;
             this.button92.UseVisualStyleBackColor = true;
+            this.button92.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button93
             // 
@@ -879,6 +971,7 @@
             this.button93.Size = new System.Drawing.Size(50, 50);
             this.button93.TabIndex = 92;
             this.button93.UseVisualStyleBackColor = true;
+            this.button93.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button94
             // 
@@ -887,6 +980,7 @@
             this.button94.Size = new System.Drawing.Size(50, 50);
             this.button94.TabIndex = 91;
             this.button94.UseVisualStyleBackColor = true;
+            this.button94.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button95
             // 
@@ -895,6 +989,7 @@
             this.button95.Size = new System.Drawing.Size(50, 50);
             this.button95.TabIndex = 90;
             this.button95.UseVisualStyleBackColor = true;
+            this.button95.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button96
             // 
@@ -903,6 +998,7 @@
             this.button96.Size = new System.Drawing.Size(50, 50);
             this.button96.TabIndex = 99;
             this.button96.UseVisualStyleBackColor = true;
+            this.button96.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button97
             // 
@@ -911,6 +1007,7 @@
             this.button97.Size = new System.Drawing.Size(50, 50);
             this.button97.TabIndex = 98;
             this.button97.UseVisualStyleBackColor = true;
+            this.button97.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button98
             // 
@@ -919,6 +1016,7 @@
             this.button98.Size = new System.Drawing.Size(50, 50);
             this.button98.TabIndex = 97;
             this.button98.UseVisualStyleBackColor = true;
+            this.button98.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button99
             // 
@@ -927,6 +1025,7 @@
             this.button99.Size = new System.Drawing.Size(50, 50);
             this.button99.TabIndex = 96;
             this.button99.UseVisualStyleBackColor = true;
+            this.button99.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // button100
             // 
@@ -935,6 +1034,7 @@
             this.button100.Size = new System.Drawing.Size(50, 50);
             this.button100.TabIndex = 95;
             this.button100.UseVisualStyleBackColor = true;
+            this.button100.MouseDown += new System.Windows.Forms.MouseEventHandler(this.button96_MouseDown);
             // 
             // label1
             // 
@@ -972,15 +1072,32 @@
             this.label4.TabIndex = 103;
             this.label4.Text = "0";
             // 
-            // timer1
+            // ResetB
             // 
-            this.timer1.Enabled = true;
+            this.ResetB.Location = new System.Drawing.Point(12, 101);
+            this.ResetB.Name = "ResetB";
+            this.ResetB.Size = new System.Drawing.Size(75, 23);
+            this.ResetB.TabIndex = 104;
+            this.ResetB.Text = "Reset";
+            this.ResetB.UseVisualStyleBackColor = true;
+            this.ResetB.Click += new System.EventHandler(this.button101_Click);
+            // 
+            // button102
+            // 
+            this.button102.Location = new System.Drawing.Point(16, 128);
+            this.button102.Name = "button102";
+            this.button102.Size = new System.Drawing.Size(75, 23);
+            this.button102.TabIndex = 105;
+            this.button102.Text = "button102";
+            this.button102.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 579);
+            this.Controls.Add(this.button102);
+            this.Controls.Add(this.ResetB);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
@@ -1198,7 +1315,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Button ResetB;
+        private System.Windows.Forms.Button button102;
     }
 }
 
