@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Drawing.Text;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -38,6 +39,24 @@ namespace MindSweeper
 
         private void button101_Click(object sender, EventArgs e)
         {
+
+        }
+
+
+
+        private void Form1_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+        private void Button_MouseDown(object sender, MouseEventArgs e)
+        {
+            Button b = sender as Button;
+            Tile t = tileGrid[getIndex(b)];
+            t.SetFlag();
+        }
+
+        private void Resetbutton_Click(object sender, EventArgs e)
+        {
             Reset();
         }
 
@@ -47,14 +66,14 @@ namespace MindSweeper
             {
                 btnGrid[i] = (Button)Controls["button" + (i + 1)];
                 tileGrid[i] = new Tile(btnGrid[i]);
-                btnGrid[i].BackColor = Color.Green;
+                tileGrid[i].SetFlagImage(FlagpictureBox.Image);
+                tileGrid[i].SetMineImage(MinepictureBox.Image);
+                tileGrid[i].SetMine(true);
             }
         }
-
-        private void button96_MouseDown(object sender, MouseEventArgs e)
+        private void createMines(int numMines)
         {
-            Button b = sender as Button;
-            b.BackColor = Color.Red;
+
         }
     }
 }
