@@ -71,6 +71,7 @@ namespace MindSweeper
                 tileGrid[i].SetMineImage(MinepictureBox.Image);
                 tileGrid[i].SetMine(true);
             }
+            createMines(5);
         }
         private void createMines(int numMines)
         {
@@ -78,6 +79,12 @@ namespace MindSweeper
             while (mineCount < numMines)
             {
                 int rNum = random.Next(0, 101);
+
+                if (tileGrid[rNum].GetMine() == false)
+                {
+                    mineCount++;
+                    tileGrid[rNum].SetMine(true);
+                }
             }
         }
     }
