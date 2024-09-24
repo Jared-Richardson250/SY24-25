@@ -16,6 +16,7 @@ namespace MindSweeper
     {
         Button[] btnGrid = new Button[100];
         Tile[] tileGrid = new Tile[100];
+        Random random = new Random();
         public Form1()
         {
             InitializeComponent();
@@ -73,7 +74,11 @@ namespace MindSweeper
         }
         private void createMines(int numMines)
         {
-
+            int mineCount = 0;
+            while (mineCount < numMines)
+            {
+                int rNum = random.Next(0, 101);
+            }
         }
     }
 }
