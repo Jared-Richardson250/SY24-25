@@ -1,4 +1,5 @@
-﻿using MindSweeper;
+﻿using Minesweeper;
+using MineSweeper;
 using System;
 using System.Collections.Generic;
 using System.Linq;
