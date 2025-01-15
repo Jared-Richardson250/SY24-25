@@ -109,7 +109,7 @@ namespace Binary
             {
                 Bits[7] = 0;
             }
-            Calc();
+            Calc(); //calc is short for calculator
         }
     }
 }
