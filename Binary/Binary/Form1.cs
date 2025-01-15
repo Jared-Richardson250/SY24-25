@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Diagnostics.Eventing.Reader;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -13,7 +14,9 @@ namespace Binary
     public partial class Form1 : Form
     {
         int Total = 0;
-        int[] Bits = new int[8];
+        int[] BitsA = new int[8];
+        int[] BitsB = new int[8];
+        int[] BitsC = new int[8];
 
         public Form1()
         {
@@ -23,93 +26,121 @@ namespace Binary
         private void Calc()
         {
             Total = 0;
-            if (Bits[0] != 0) Total += 1;
-            if (Bits[1] != 0) Total += 2;
-            if (Bits[2] != 0) Total += 4;
-            if (Bits[3] != 0) Total += 8;
-            if (Bits[4] != 0) Total += 16;
-            if (Bits[5] != 0) Total += 32;
-            if (Bits[6] != 0) Total += 64;
-            if (Bits[7] != 0) Total += 128;
-            label1.Text = Total.ToString();
+            if (BitsA[0] != 0) Total += 1;
+            if (BitsA[1] != 0) Total += 2;
+            if (BitsA[2] != 0) Total += 4;
+            if (BitsA[3] != 0) Total += 8;
+            if (BitsA[4] != 0) Total += 16;
+            if (BitsA[5] != 0) Total += 32;
+            if (BitsA[6] != 0) Total += 64;
+            if (BitsA[7] != 0) Total += 128;
+            Row1Label.Text = Total.ToString();
         }
 
         private void Bit6_TextChanged(object sender, EventArgs e)
         {
             Total = 0;
             //Bit1
-            if (Bit1.Text == "1")
+            if (BitA1.Text == "1")
             {
-                Bits[0] = 1;
+                BitsA[0] = 1;
             }
             else
             {
-                Bits[0] = 0;
+                BitsA[0] = 0;
             }
             //Bit2
-            if (Bit2.Text == "1")
+            if (BitA2.Text == "1")
             {
-                Bits[1] = 1;
+                BitsA[1] = 1;
             }
             else
             {
-                Bits[1] = 0;
+                BitsA[1] = 0;
             }
             //Bit3
-            if (Bit3.Text == "1")
+            if (BitA3.Text == "1")
             {
-                Bits[2] = 1;
+                BitsA[2] = 1;
             }
             else
             {
-                Bits[2] = 0;
+                BitsA[2] = 0;
             }
             //Bit4
-            if (Bit4.Text == "1")
+            if (BitA4.Text == "1")
             {
-                Bits[3] = 1;
+                BitsA[3] = 1;
             }
             else
             {
-                Bits[3] = 0;
+                BitsA[3] = 0;
             }
             //Bit5
-            if (Bit5.Text == "1")
+            if (BitA5.Text == "1")
             {
-                Bits[4] = 1;
+                BitsA[4] = 1;
             }
             else
             {
-                Bits[4] = 0;
+                BitsA[4] = 0;
             }
             //Bit6
-            if (Bit6.Text == "1")
+            if (BitA6.Text == "1")
             {
-                Bits[5] = 1;
+                BitsA[5] = 1;
             }
             else
             {
-                Bits[5] = 0;
+                BitsA[5] = 0;
             }
             //Bit7
-            if (Bit7.Text == "1")
+            if (BitA7.Text == "1")
             {
-                Bits[6] = 1;
+                BitsA[6] = 1;
             }
             else
             {
-                Bits[6] = 0;
+                BitsA[6] = 0;
             }
             //Bit8
-            if (Bit8.Text == "1")
+            if (BitA8.Text == "1")
             {
-                Bits[7] = 1;
+                BitsA[7] = 1;
             }
             else
             {
-                Bits[7] = 0;
+                BitsA[7] = 0;
             }
             Calc(); //calc is short for calculator
+        }
+
+        private void Bit6_MouseDown(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void ClearButton_Click(object sender, EventArgs e)
+        {
+            for (int i = 0; i < BitsA.Length; i++)
+            {
+                BitsA[i] = 0;
+            }
+            update();
+        }
+
+        private void update()
+        {
+            BitB1.Text = (BitsA[0] == 1 ? "1" : "0");
+            BitB2.Text = (BitsA[1] == 1 ? "1" : "0");
+            BitB3.Text = (BitsA[2] == 1 ? "1" : "0");
+            BitB4.Text = (BitsA[3] == 1 ? "1" : "0");
+            BitB5.Text = (BitsA[4] == 1 ? "1" : "0");
+            BitB6.Text = (BitsA[5] == 1 ? "1" : "0");
+            BitB7.Text = (BitsA[6] == 1 ? "1" : "0");
+            BitB8.Text = (BitsA[7] == 1 ? "1" : "0");
+            BitB1.Text = (BitsA[0] == 1 ? "1" : "0");
+            BitB1.Text = (BitsA)
         }
     }
 }
